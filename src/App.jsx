@@ -14,7 +14,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <Lead/>
-      <Marquee rotation={-4} />
+      <Marquee rotation={2} />
       <Background/>
       <Marquee rotation={-4} />
       <Tokenomics/>

@@ -4,7 +4,7 @@ const Marquee = ({rotation}) => {
       className={`
         relative
         z-50
-        -mt-[120px]     /* pulls marquee upward */
+        -mt-[130px]     /* pulls marquee upward */
         
         w-[140vw]
         left-1/2

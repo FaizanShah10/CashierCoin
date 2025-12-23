@@ -1,10 +1,10 @@
 export default function Background() {
   return (
-    <section className="relative w-full md:h-[120vh] h-[80vh] bg-[#1C1B1C] overflow-hidden md:-mt-20 -mt-10">
+    <section className="relative w-full md:h-[140vh] h-[80vh] bg-[#1C1B1C] overflow-hidden md:-mt-20 -mt-10">
       <div className="relative z-20 max-w-7xl mx-auto px-6 pt-20 md:pt-32 pb-[40vh]">
-        <div className="flex justify-end">
-          <div className="max-w-md ">
-            <h1 className="text-white rocket-regular md:text-[120px] text-[76px] leading-none">
+        <div className="flex justify-end mr-30">
+          <div className="">
+            <h1 className="text-white rocket-regular md:text-[140px] text-[76px] leading-none">
               THE BACKGROUND.
             </h1>
 
