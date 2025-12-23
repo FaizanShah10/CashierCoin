@@ -1,0 +1,73 @@
+@import url("https://fonts.cdnfonts.com/css/coconutz");
+@import url("https://fonts.cdnfonts.com/css/rc-rocket");
+@import url("https://fonts.cdnfonts.com/css/alien-among-us");
+
+
+@import "tailwindcss";
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* RC Rocket */
+.rocket-regular {
+  font-family: "RC Rocket", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Coconutz */
+.coconutz-regular {
+  font-family: "Coconutz", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Alien Among Us */
+.alien-regular {
+  font-family: "Alien Among Us", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Track that moves */
+.marquee__track {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+/* Animation */
+.animate-marquee {
+  animation: marquee-left 18s linear infinite;
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Move by half because we duplicated the track */
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional: pause on hover (if you ever remove pointer-events-none) */
+.marquee:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+/* Optional: reduce motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+    transform: translateX(0);
+  }
+}
