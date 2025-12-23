@@ -3,41 +3,38 @@ import { ImArrowUpRight2 } from "react-icons/im";
 import { motion } from "framer-motion";
 
 const Lead = () => {
-
-
-const fromLeft = {
-  hidden: { opacity: 0, x: -120 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 1.2, ease: "easeOut" },
-  },
-};
-
-const fromRight = {
-  hidden: { opacity: 0, x: 120 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 1.2,
-      ease: "easeOut",
+  const fromLeft = {
+    hidden: { opacity: 0, x: -120 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 1.2, ease: "easeOut" },
     },
-  },
-};
+  };
 
-const fromBottom = {
-  hidden: { opacity: 0, y: 120 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 1.2,
-      ease: "easeOut",
+  const fromRight = {
+    hidden: { opacity: 0, x: 120 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1.2,
+        ease: "easeOut",
+      },
     },
-  },
-};
+  };
 
+  const fromBottom = {
+    hidden: { opacity: 0, y: 120 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1.2,
+        ease: "easeOut",
+      },
+    },
+  };
 
   return (
     <section
@@ -53,10 +50,8 @@ const fromBottom = {
   "
     >
       <div className="relative max-w-[1800px] mx-auto h-full px-6 lg:px-12">
-
         {/* ================= TEXT + IMAGE ================= */}
         <div className="relative z-10 flex flex-col lg:flex-row items-start justify-between">
-
           {/* LEFT CONTENT (FROM LEFT) */}
           <motion.div
             variants={fromLeft}
@@ -95,55 +90,53 @@ const fromBottom = {
         </div>
 
         {/* ================= FLOATING CARD (FROM BOTTOM) ================= */}
+        {/* ================= FLOATING CARD (FROM BOTTOM) ================= */}
         <motion.div
           variants={fromBottom}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.4 }}
           className="
-            absolute
-            left-6
-            lg:left-12
-            -bottom-100
-            md:-bottom-10
-            z-[2000]
-            w-[280px]
-            sm:w-[320px]
-          "
+    absolute
+    left-6
+    lg:left-12
+    -bottom-120
+    md:-bottom-44
+    z-[2000]
+    md:w-[360px] w-[280px]
+    sm:w-[420px]
+  "
         >
-          <div className="relative h-[420px] bg-white rounded-[22px] border-[4px] border-black shadow-xl">
-
+          <div className="relative md:h-[520px] h-[440px] bg-white rounded-[28px] border-[4px] border-black shadow-2xl">
             {/* HEADER */}
-            <div className="px-5 pt-5">
-              <p className="text-xs uppercase font-bold text-[#D92833]">
+            <div className="px-6 pt-6">
+              <p className="text-sm uppercase font-bold text-[#D92833]">
                 Lorem ipsum dolor
               </p>
-              <h3 className="rocket-regular text-[38px] uppercase">
+              <h3 className="rocket-regular text-[48px] uppercase leading-none mt-1">
                 Lorem Ipsum
               </h3>
             </div>
 
             {/* IMAGE */}
-            <div className="px-4 pb-4 pt-4">
-              <div className="relative h-[280px] bg-[#ff5a5f] rounded-[18px] border-4 border-black overflow-hidden">
+            <div className="px-5 pb-5 pt-6">
+              <div className="relative md:h-[340px] h-[280px] bg-[#ff5a5f] rounded-[22px] border-4 border-black overflow-hidden">
                 <img
                   src="/images/CardImg.png"
                   alt="card"
-                  className="absolute left-1/2 -translate-x-1/2 -top-6 w-[105%]"
+                  className="absolute left-1/2 -translate-x-1/2 top-8 w-[110%]"
                 />
               </div>
             </div>
 
             {/* FLOATING ARROW */}
-            <div className="absolute -top-8 -right-8">
-              <div className="w-28 h-28 bg-black rounded-full flex items-center justify-center">
-                <ImArrowUpRight2 size={40} className="text-white" />
+            <div className="absolute -top-10 -right-10">
+              <div className="md:w-32 md:h-32 w-28 h-28 bg-[#2A282B] rounded-full flex items-center justify-center">
+                <ImArrowUpRight2 size={46} className="text-white" />
               </div>
             </div>
-
           </div>
         </motion.div>
-
       </div>
     </section>
   );
