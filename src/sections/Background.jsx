@@ -1,6 +1,6 @@
 export default function Background() {
   return (
-    <section className="relative w-full md:h-screen h-[80vh] bg-[#1C1B1C] overflow-hidden">
+    <section className="relative w-full md:h-[120vh] h-[80vh] bg-[#1C1B1C] overflow-hidden md:-mt-20 -mt-10">
       <div className="relative z-20 max-w-7xl mx-auto px-6 pt-20 md:pt-32 pb-[40vh]">
         <div className="flex justify-end">
           <div className="max-w-md ">

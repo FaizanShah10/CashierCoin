@@ -68,7 +68,7 @@ const staggerByIndex = {
 
 
   return (
-    <section className="relative bg-[#1C1B1C] md:py-32 py-10 overflow-hidden">
+    <section className="relative bg-[#1C1B1C] md:py-32 py-10 overflow-hidden md:-mt-20 -mt-10">
       <div className="max-w-7xl mx-auto px-6 text-center">
 
         {/* HEADING */}

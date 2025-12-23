@@ -134,7 +134,7 @@ const fadeUp = {
             alt="coins animation"
           />
 
-          <h1 className="relative z-10 rocket-regular uppercase md:text-[340px] text-[150px] leading-none">
+          <h1 className="relative md:z-10 z-20 rocket-regular uppercase md:text-[340px] text-[100px] leading-none">
             k-drama
           </h1>
         </motion.div>

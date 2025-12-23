@@ -5,7 +5,6 @@ const Marquee = ({rotation}) => {
         relative
         z-50
         -mt-[120px]     /* pulls marquee upward */
-        mb-[120px]      /* creates space before next section */
         
         w-[140vw]
         left-1/2

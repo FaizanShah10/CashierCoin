@@ -4,7 +4,7 @@ import { BsXLg } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#0e0e0e] pt-40 pb-10">
+    <footer className="relative bg-[#0e0e0e] pt-40 pb-10 -mt-20">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* BLACK CTA CARD */}

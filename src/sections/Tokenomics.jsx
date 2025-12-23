@@ -45,7 +45,7 @@ const staggerContainer = {
 
 
   return (
-    <section className="relative bg-[#1C1B1C] md:py-32 overflow-hidden">
+    <section className="relative bg-[#1C1B1C] md:py-32 py-10 overflow-hidden md:-mt-20 -mt-8">
       <div className="w-full mx-auto text-center">
 
         {/* ================= HEADING ================= */}

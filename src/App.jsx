@@ -16,7 +16,7 @@ export default function App() {
       <Lead/>
       <Marquee rotation={-4} />
       <Background/>
-      <Marquee rotation={4} />
+      <Marquee rotation={-4} />
       <Tokenomics/>
       <Marquee rotation={-4} />
       <Roadmap/>
