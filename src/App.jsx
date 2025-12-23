@@ -18,7 +18,7 @@ export default function App() {
       <Background/>
       <Marquee rotation={-4} />
       <Tokenomics/>
-      <Marquee rotation={-4} />
+      <Marquee rotation={2} />
       <Roadmap/>
       <MeetTheCast/>
       <Marquee rotation={-4} />

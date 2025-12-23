@@ -41,7 +41,7 @@ const fadeUp = {
 
 
   return (
-    <section className="relative h-[120vh] bg-[#151515] text-white overflow-hidden px-12">
+    <section className="relative min-h-[120vh] bg-[#151515] text-white overflow-hidden md:px-12">
       
       {/* ================= UPPER SECTION ================= */}
       <div className="flex md:flex-row flex-col items-center justify-between">
@@ -63,7 +63,7 @@ const fadeUp = {
           initial="hidden"
           animate="visible"
           transition={{ delay: 0.2 }}
-          className="mt-48 absolute right-45"
+          className="mt-48 absolute right-60"
         >
           <p className="md:block hidden coconutz-regular w-80 uppercase text-[20px] text-white/70">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quis
@@ -75,7 +75,7 @@ const fadeUp = {
             initial="hidden"
             animate="visible"
             transition={{ delay: 0.4 }}
-            className="mt-12 uppercase font-bold md:px-16 px-8 md:py-4 py-2 md:text-lg text-sm bg-[#D92833] hover:bg-white hover:text-[#D92833] duration-300 cursor-pointer text-black rounded-full"
+            className="mt-12 absolute md:-bottom-10 -bottom-120 uppercase font-bold md:px-16 px-8 md:py-4 py-2 md:text-lg text-xs bg-[#D92833] hover:bg-white hover:text-[#D92833] duration-300 cursor-pointer text-white rounded-full"
           >
             join community
           </motion.button>
@@ -92,7 +92,7 @@ const fadeUp = {
         initial="hidden"
         animate="visible"
         transition={{ delay: 0.6 }}
-        className="absolute z-20 md:top-8 md:right-85 right-6"
+        className="absolute z-20 md:top-8 top-40 md:right-85 right-6"
         src="./images/HeroImg.png"
         alt=""
       />
@@ -115,7 +115,7 @@ const fadeUp = {
             <img className="md:w-34 w-23" src="./images/Vector3.png" alt="" />
           </div>
 
-          <p className="mt-6 max-w-60 coconutz-regular uppercase text-sm text-gray-300">
+          <p className="md:mt-6 mt-90 max-w-60 coconutz-regular uppercase text-sm text-gray-300">
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </motion.div>
@@ -126,7 +126,7 @@ const fadeUp = {
           initial="hidden"
           animate="visible"
           transition={{ delay: 1 }}
-          className="relative ml-62"
+          className="relative md:ml-62 md:mr-0 mr-14 md:top-10 top-100"
         >
           <img
             className="md:block hidden absolute -top-24 left-1/2 -translate-x-1/2 z-0 w-48 opacity-90"
@@ -134,7 +134,7 @@ const fadeUp = {
             alt="coins animation"
           />
 
-          <h1 className="relative md:z-10 z-20 rocket-regular uppercase md:text-[340px] text-[100px] leading-none">
+          <h1 className="relative md:z-10 z-20 rocket-regular uppercase md:text-[340px] text-[140px] leading-none">
             k-drama
           </h1>
         </motion.div>
